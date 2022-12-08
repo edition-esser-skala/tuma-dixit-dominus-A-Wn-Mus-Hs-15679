@@ -1,0 +1,20 @@
+composer:
+  last: Tůma
+  first: František Ignác Antonín
+title: Dixit Dominus
+genre: psalm
+scoring: S, A, T, B (solo), S, A, T, B (coro), cnto, fag, 2 clno, 2 trb, 2 vl, b, org solo
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: A-Wn
+    shelfmark: Mus.Hs.15679
+    date: 1743
+    rism: 600137282
+    url: https://data.onb.ac.at/rec/AC14297573
+    license: public domain
+    principal: true
+    notes: parts for S solo, A solo, T solo, B solo, S rip, A rip, T rip, B rip (2 ×), vl 1, vl 2, clno 1, clno 2, trb 1, trb 2, cnto, fag, vlc, vlne, org, and maestro di cappella
+imslp:
+parts:
+  clno12: Clarino I, II in C
