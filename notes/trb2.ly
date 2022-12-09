@@ -33,9 +33,57 @@ DixitTromboneII = {
 
 TecumTromboneII = {
   \relative c' {
-    \clef treble
+    \clef tenor
     \key g \major \time 3/4 \tempoTecum
       \set Score.currentBarNumber = #38
+    \mvTr d2\fE-\solo g,4
+    e' c4.\trill c8
+    h4 r r %40
+    d d cis\trill
+    d a-! h
+    c!2 a4
+    h8 a h2\trill
+    a8 d-! d-! a16( h) c8-! c-! %45
+    h4 h4.\trill a16( h)
+    c4 cis4.\trill h16( cis)
+    d2.
+    e8 c! a2\trill
+    g4 r r %50
+    R2.*13 %63
+    r8 d'-!\fE d-! a16 h c8 c
+    h4 h2\trill %65
+    a4 r r
+    R2.*11 %77
+    d2\fE cis4
+    fis d4.\trillE d8
+    cis2 r4 %80
+    e h cis
+    d r r
+    r8 \parOn a'-\parenthesize-! a-! e16 fis g8-! \parOff g-\parenthesize-!
+    fis g e4.\trill d8
+    d4 r r %85
+    R2.*10 %95
+    r8 c\fE c e16 d c8 c
+    h4 r r
+    r a h
+    c r r
+    r h cis %100
+    d h8( d) c( h)
+    a4 r r
+    R2.*10 %112
+    r4 d\fE g,
+    e' c4.\trill c8
+    h4 r r %115
+    d d cis\trill
+    d a-! h
+    c!2 a4
+    h8( a) h2\trill
+    a8 d-! d-! a16 h c8-! c-! %120
+    h4 h4.\trill a16( h)
+    c4 cis4.\trill h16( cis)
+    d2.
+    e8 c! a4.\trill g8
+    g2.\fermata \bar "||" %125 finis
   }
 }
 

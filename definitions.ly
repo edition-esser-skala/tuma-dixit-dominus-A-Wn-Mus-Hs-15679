@@ -4,7 +4,7 @@
 #(define option-init-toc #t)
 #(define option-print-all-bar-numbers #t)
 \include "ees.ly"
-% \include "articulate_ees.ly"
+\include "articulate_ees.ly"
 
 
 tempoDixit = \tempoMarkup "Allegro"

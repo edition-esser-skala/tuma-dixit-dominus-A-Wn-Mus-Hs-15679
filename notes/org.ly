@@ -89,11 +89,11 @@ TecumOrgano = {
     \clef bass
     \key g \major \time 3/4 \tempoTecum
       \set Score.currentBarNumber = #38
-    g4-\solo h2
+    \mvTr g4\fE-\solo h2
     c4 a d
     g, h fis %40
     g e a
-    d, d' c8 h
+    d, d' c!8 h
     a4 a d
     g,8 d' g,4 h8 c
     d4 fis2 %45
@@ -101,7 +101,7 @@ TecumOrgano = {
     c a2
     d4 c h
     c d d,
-    g h g %50
+    g h\pE g %50
     c a d
     g, h d
     g e a
@@ -115,9 +115,9 @@ TecumOrgano = {
     h'2.
     e4 fis2
     g4 g,2
-    d'4 fis2
+    d'4\fE fis2
     g4 g,2 %65
-    d' fis,4
+    d' fis,4\pE
     g2.
     g4 g g
     a a a
@@ -127,7 +127,7 @@ TecumOrgano = {
     cis cis d
     a fis g8 h
     g4 a a %75
-    d, fis' d
+    d,\fE fis' d
     g e a
     d, fis a
     d, h e
@@ -136,7 +136,7 @@ TecumOrgano = {
     d, cis2
     d4 r cis8 a
     d4 a' a,
-    d2 e4 %85
+    d2 e4\pE %85
     fis2.
     g4 g, a
     h2.
@@ -146,14 +146,14 @@ TecumOrgano = {
     e4 d2
     c r4
     f g g,
-    c h2 %95
+    c\fE h2 %95
     c c4
     g' g f8 e
     d2 g4
     c,2 r4
     e2 a4 %100
     d, g,2
-    d'2 e4
+    d'2 e4\pE
     fis fis,2
     g2.
     g %105
@@ -164,11 +164,11 @@ TecumOrgano = {
     h4 a2 %110
     g2.
     d'2 d,4
-    g2 h4
+    g2\fE h4
     c a d
     g, h fis %115
     g e a
-    d, d' c8 h
+    d, d' c!8 h
     a2 d4
     g, h g
     d' fis2 %120
@@ -189,20 +189,20 @@ TecumBassFigures = \figuremode {
   r
   r2 <6>4
   r <6> <5!> %45
-  r2 <7>4
+  r2 <7!>4
   r <[8] _+> <7 \t>
   r2 <6>4
-  r <_+>2
+  <[6]> <_+>2
   r2. %50
   r4 <7> q
   r2.
   r4 <7> <_+>
   r2.
-  r2 <_+>4 %55
+  <[_!]>2 <_+>4 %55
   r2.
   r4 <6>2
   r2.
-  <4>4 <3>2
+  <4>4 <_!>2
   <4>4 <3>2 %60
   <4>4 <3>2
   <6 5>4 <6>2
@@ -223,37 +223,37 @@ TecumBassFigures = \figuremode {
   r4 <7> <7 _+>
   r2 <_+>4
   r <7> <_+>
-  <_+>2. %80
-  r2 <_+>4
+  <_+>2 \bo <[\tllur]>8 \bc <[6]> %80
+  r2 <[7] _+>4
   r <6>2
-  r2 <[6]>4
-  r <_+>2
+  r2 <[6 5]>8 \bc <[\t \t]>
+  r4 <_+>2
   r2. %85
-  r
+  <[6]>
   r
   <6>2 <5!>4
   r2.
   <5>4 <6>2 %90
   <4 2>4 <6>2
-  <4 2!>4 <6>2
+  <4 2!>4 <6 [_!]>2
   r2.
   r
-  r %95
-  r
-  r
-  <_!>
-  r
-  <5>2 <_+>4 %100
+  r4 \bo <[6]> <5!> %95
+  r2.
+  r2 <\tllur>8 \bc <[6]>
+  <_!>2 <[7!]>4
+  r2.
+  <5>2 <[7] _+>4 %100
   q2.
   r
-  r
+  <[6]>
   r
   r %105
   <6>
   r
-  <5>2 <6>4
-  <4 2> <6>2
-  <6 2>4 <6>2 %110
+  <5>4 <6>2
+  <4 2>4 <6>2
+  <[4] 2>4 <6>2 %110
   r2.
   r
   r2 <6>4
@@ -266,8 +266,8 @@ TecumBassFigures = \figuremode {
   r4 <6> <5!> %120
   r <7!>2
   r4 <7 _+>2
-  r2.
-  r
+  r2 \bo <[6]>4
+  \bc q2.
   r %125 finis
 }
 

@@ -56,8 +56,6 @@ DixitSopranoLyrics = \lyricmode {
   o -- rum. %37 finis
 }
 
-% Te -- cum prin -- ci -- pi -- um in di -- e vir -- tu -- tis tu -- ae in splen -- do -- ri -- bus san -- cto -- rum,
-% ex u -- te -- ro an -- te lu -- ci -- fe -- rum ge -- nu -- i te.
 % Iu -- ra -- vit Do -- mi -- nus et non poe -- ni -- te -- bit e -- um:
 % Tu es sa -- cer -- dos in ae -- ter -- num se -- cun -- dum or -- di -- nem Mel -- chi -- se -- dech.
 % Do -- mi -- nus a dex -- tris tu -- is, con -- fre -- git in di -- e i -- rae su -- ae re -- ges.

@@ -64,11 +64,109 @@ TecumBasso = {
     \clef bass
     \key g \major \time 3/4 \autoBeamOff \tempoTecum
       \set Score.currentBarNumber = #38
+    R2.*14
+    \mvTr g'2\pE^\solo fis4
+    h g4. g8
+    fis2 r4
+    a a gis
+    a e fis
+    g!2.
+    fis4 fis fis
+    e4. fis16([ gis)] a8 a
+    a4 g g
+    fis4. g16([ a)] h8 h
+    h4 a8[ g] a4~
+    a g8[ fis] g4
+    fis r r
+    R2.*2
+    r4 d g
+    e2.~
+    e16[ g fis e] a8[ g fis e]
+    fis2.~
+    fis16[ a g fis] h8[ a g fis]
+    g2.~
+    g16[ e fis g] a8 g fis fis
+    e4 a16[ fis g a] h[ a g fis]
+    g4 a2
+    d,4 r r
+    R2.*7
+    r4 r a'
+    fis4. e8 d4
+    a'8([ g)] fis([ e)] d([ fis)]
+    g8. g,16 g4 r
+    R2.
+    g'4. e8[ f g]
+    a2.
+    g
+    f
+    e2 a8[ g]
+    f4 g f8 g
+    c,4 r r
+    R2.*8
+    r4 r g'
+    g4. g,8 g4
+    d'8([ g,)] g'([ f)] e([ d)]
+    e8. d16 c4 r
+    g'8[ e a h c a]
+    fis8[ d g a h g]
+    e[ c fis g a fis]
+    g[ d g fis] g4
+    d2 c8 d
+    g,4 r r
+    R2.*11
+    R2.\fermata \bar "||"
   }
 }
 
 TecumBassoLyrics = \lyricmode {
+  Te -- cum %52
+  prin -- ci -- pi --
+  um
+  in di -- e %55
+  vir -- tu -- tis
+  tu --
+  ae in splen --
+  do -- ri -- bus san --
+  cto -- rum, splen -- %60
+  do -- ri -- bus san --
+  cto -- _ _
+  _ _
+  rum,
 
+  in splen -- %67
+  do --
+  _
+  _ %70
+  _
+  _
+  _ ri -- bus san --
+  cto -- _ _
+  _ _ %75
+  rum.
+
+  Ex %84
+  u -- te -- ro %85
+  an -- te __ lu --
+  ci -- fe -- rum
+
+  ge -- _
+  _ %90
+  _
+  _
+  _ _
+  _ _ nu -- i
+  te, %95
+
+  ex %104
+  u -- te -- ro %105
+  an -- te __ lu --
+  ci -- fe -- rum
+  ge --
+  _
+  _ %110
+  _ _
+  _ nu -- i
+  te. %113 finis
 }
 
 IuravitBasso = {

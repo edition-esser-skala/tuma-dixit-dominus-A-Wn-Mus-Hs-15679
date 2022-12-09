@@ -62,11 +62,117 @@ TecumTenore = {
     \clef "treble_8"
     \key g \major \time 3/4 \autoBeamOff \tempoTecum
       \set Score.currentBarNumber = #38
+    R2.*12 %49
+    \mvTr d2\pE^\solo h4 %50
+    e c4. c8
+    h4 r r
+    d d cis
+    d a h
+    c!2( h4) %55
+    c2 r4
+    r h h
+    a4. h16([ cis)] d8 d
+    d4 c c
+    h4. cis16([ dis)] e8 e %60
+    e4 d d
+    c2 d8[ c]
+    \tuplet 3/2 4 { h[ a h] } h2
+    a4 r r
+    R2. %65
+    r4 a d
+    h2.~
+    h16[ d c h] e8[ d cis h]
+    \once \tieDashed cis2.~
+    cis16[ e d cis] fis8[ e d cis] %70
+    d2.~
+    d16[ fis e d] g8[ fis e d]
+    e4. e8 d d
+    cis16[ a h cis] d2~
+    d8[ h] cis2 %75
+    d4 r r
+    R2.*9 %85
+    r4 r d
+    h4. a8 g4
+    d'8([ c)] h([ a)] g([ f)]
+    e d c4 r
+    c'8[ a d e f d] %90
+    h[ g c d e c]
+    a[ f h c d h]
+    c[ g c h] c4~
+    c8[ a] h4. a16 h
+    c4 r r %95
+    R2.*5 %100
+    r4 r d
+    d4. d,8 d4
+    a'8([ d,)] d'([ c)] h([ a)]
+    h8. a16 g8 g h16[ a h c]
+    d8[ h16 c] d8[ c] h a %105
+    g4 r r
+    g4. a16[ h] c[ h c d]
+    e2.
+    d
+    c %110
+    h2 a8 g
+    a2~ a8 g16 a
+    g4 r r
+    R2.*11 %124
+    R2.\fermata \bar "||" %125 finis
   }
 }
 
 TecumTenoreLyrics = \lyricmode {
+  Te -- cum %50
+  prin -- ci -- pi --
+  um
+  in di -- e
+  vir -- tu -- tis
+  tu -- %55
+  ae
+  in splen --
+  do -- ri -- bus san --
+  cto -- rum, splen --
+  do -- ri -- bus san -- %60
+  cto -- rum, san --
+  cto -- _
+  _ _
+  rum,
+  %65
+  in splen --
+  do --
+  _
+  _
+  _ %70
+  _
+  _
+  _ ri -- bus san --
+  cto -- _
+  _ %75
+  rum.
 
+  Ex %86
+  u -- te -- ro
+  an -- te __ lu --
+  ci -- fe -- rum
+  ge -- %90
+  _
+  _
+  _ _
+  _ nu -- i
+  te, %95
+
+  ex %101
+  u -- te -- ro
+  an -- te __ lu --
+  ci -- fe -- rum ge -- _
+  _ _ nu -- i %105
+  te,
+  ge -- _ _
+  _
+  _
+  _ %110
+  _ nu -- i,
+  ge -- nu -- i
+  te. %113 finis
 }
 
 IuravitTenore = {
