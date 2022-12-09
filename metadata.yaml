@@ -15,8 +15,9 @@ sources:
     license: public domain
     principal: true
     notes: parts for S solo, A solo, T solo, B solo, S rip, A rip, T rip, B rip (2 ×), vl 1, vl 2, clno 1, clno 2, trb 1, trb 2, cnto, fag, vlc, vlne, org, and maestro di cappella
-imslp:
+imslp: Dixit_Dominus_(A-Wn_Mus.Hs.15679)_(Tůma,_František_Ignác_Antonín)
 parts:
   clno12: Clarino I, II in C
+  org: Organo solo
 extra_abbreviations:
   vlne:

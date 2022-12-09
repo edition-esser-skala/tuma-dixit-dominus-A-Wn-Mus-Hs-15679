@@ -6,6 +6,20 @@
 \include "ees.ly"
 
 
+tacet = #(define-scheme-function
+  (parser location title)
+  (string?)
+  (markup
+    #:vspace 5
+    #:fontsize 3
+    #:fill-line (
+      ""
+      #:center-column (title #:italic "tacet" )
+      ""
+    )
+  ))
+
+
 tempoDixit = \tempoMarkup "Allegro"
 tempoTecum = \tempoMarkup "Andante"
 tempoIuravit = \tempoMarkup "Adagio"

@@ -5,7 +5,7 @@ DixitTromboneI = {
     \clef alto
     \key c \major \time 4/4 \tempoDixit
     R1*8 %8
-    r8 g'\fE a g r g a g
+    r8 \mvTr g'\fE-\tutti a g r g a g
     r g a g g2 %10
     g4 r r2
     g1
@@ -91,7 +91,7 @@ IuravitTromboneI = {
     \clef alto
     \key c \major \time 4/4 \tempoIuravit
       \set Score.currentBarNumber = #126
-    r2 r4 g'\fE
+    r2 r4 \mvTr g'\fE-\tutti
     fis fis fis4. fis8
     e2 r
     r r4 e\fE

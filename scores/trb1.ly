@@ -6,15 +6,43 @@
 
 \book {
   \bookpart {
-    \section "Adeste animæ"
+    \section "Dixit Dominus"
     \addTocEntry
-    \paper { indent = 2.5\cm }
+    \paper { indent = 2.5\cm systems-per-page = #6 }
     \score {
       <<
         \new Staff {
           \set Staff.instrumentName = "Trombone I"
-          \AdesteTromboneI
+          \DixitTromboneI
         }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Tecum principium"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \TecumTromboneI }
+      >>
+    }
+  }
+  \bookpart {
+    \subsection "Iuravit Dominus"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \IuravitTromboneI }
+      >>
+    }
+    \tacet "De torrente"
+  }
+  \bookpart {
+    \subsection "Gloria Patri"
+    \addTocEntry
+    \score {
+      <<
+        \new Staff { \GloriaTromboneI }
       >>
     }
   }
