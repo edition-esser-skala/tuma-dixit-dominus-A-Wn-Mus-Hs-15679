@@ -36,14 +36,44 @@ IuravitCornetto = {
     \clef soprano
     \key c \major \time 4/4 \tempoIuravit
       \set Score.currentBarNumber = #126
-  }
-}
-
-DeTorrenteCornetto = {
-  \relative c' {
-    \clef soprano
-    \key g \major \time 3/4 \tempoDeTorrente
-      \set Score.currentBarNumber = #177
+    r2 r4 g'\fE
+    a a a4. a8
+    g2 r
+    r r4 g\fE
+    gis2 a %130
+    ais4. ais8 h2
+    R1 \noBreak
+    R\fermata \bar "||"
+    \tempoEtNon h8\fE h h a h h16 h h8 a \noBreak
+    h d d cis d4 r %135
+    d8 d d cis d d16 d d8 cis
+    d d d d e d c a
+    h h r4 r2
+    r8 h h h c4 c
+    r8 c c c a4 a %140
+    r8 d4 d8 d c16 h c4
+    h r r8 e, f g
+    a8. a16 a4 r8 a g a
+    h8. h16 c8 c c4 h \noBreak
+    c r r2 %145
+    \tempoDominus R1*14 \noBreak
+    R1\fermata \bar "||" %160
+    \tempoIudicabit R1 \noBreak
+    a4\fE a a2
+    a r
+    r h4\fE h
+    h a8 c c4 c %165
+    c8. h16 h4 r2
+    r2 r4 r8 \tempoImplebit h\fE
+    c4 d8 d e e r h
+    c h16 a gis8 gis a a r c~
+    c a d h r e4 c8 %170
+    f d r g4 e8 e c
+    c a d d d2~
+    d4 c8 c c4 h
+    c r r8 c c4
+    c c c h8 a %175
+    h2 c\fermata \bar "||" %176 finis
   }
 }
 

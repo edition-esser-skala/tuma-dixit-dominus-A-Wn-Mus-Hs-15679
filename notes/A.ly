@@ -85,11 +85,83 @@ IuravitAlto = {
     \clef treble
     \key c \major \time 4/4 \autoBeamOff \tempoIuravit
       \set Score.currentBarNumber = #126
+    r2 r4 \mvTr g'\fE^\tutti
+    fis fis fis4. fis8
+    e2 r
+    r r4 e\fE
+    f!2 e %130
+    e4. e8 fis2
+    R1 \noBreak
+    R1\fermata \bar "||"
+    \tempoEtNon g8\fE g g fis g g16 g g8 fis \noBreak
+    g g g4 fis r %135
+    d8 d fis a fis d16 fis fis8 e
+    fis fis g g g g g fis
+    g g r4 r2
+    r r8 g g g
+    e4 e r8 f! f f %140
+    d d g g g2
+    g8 d e f g8. g16 g4
+    r8 c, d e f8. f16 f4
+    d8. d16 g8 g g4. g8
+    g4 r r2 %145
+    \tempoDominus R1*14 \noBreak %159
+    R1\fermata \bar "||" %160
+    \tempoIudicabit R1 \noBreak
+    \mvTr e4\fE^\tuttiE e f2
+    e r
+    r e4\fE e
+    e e8 e g!4 g %165
+    g8. g16 g4 r2
+    r r4 r8 \tempoImplebit g\fE
+    g4 g8 g g g r e
+    e4 e8 e e e r4
+    f4. f8 d g r e~ %170
+    e f f g r g4 a8
+    a a a f f4 f
+    e e8 e d2
+    e4 r r8 a a4
+    a a g2~ \noBreak %175
+    g g\fermata \bar "||" %176 finis
   }
 }
 
 IuravitAltoLyrics = \lyricmode {
+  Iu -- %126
+  ra -- vit Do -- mi --
+  nus,
+  iu --
+  ra -- vit %130
+  Do -- mi -- nus
 
+  et non poe -- ni -- te -- bit, non poe -- ni -- %134
+  te -- bit e -- um, %135
+  et non poe -- ni -- te -- bit, non poe -- ni --
+  te -- bit, et non poe -- ni -- te -- bit
+  e -- um:
+  Tu es sa --
+  er -- dos, tu es sa -- %140
+  cer -- dos in ae -- ter --
+  num se -- cun -- dum or -- di -- nem,
+  se -- cun -- dum or -- di -- nem,
+  or -- di -- nem Mel -- chi -- se --
+  dech. %145
+
+  Iu -- di -- ca -- %162
+  bit,
+  iu -- di --
+  ca -- bit in na -- ti -- %165
+  o -- ni -- bus,
+  im --
+  ple -- bit ru -- i -- nas, im --
+  ple -- bit ru -- i -- nas,
+  con -- quas -- sa -- bit, con -- %170
+  quas -- sa -- bit, con -- quas --
+  sa -- bit ca -- pi -- ta in
+  ter -- ra mul -- to --
+  rum, in ter --
+  ra mul -- to -- %175
+  rum. %176 finis
 }
 
 DeTorrenteAlto = {

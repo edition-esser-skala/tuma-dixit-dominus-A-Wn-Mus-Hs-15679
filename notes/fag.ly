@@ -33,14 +33,44 @@ IuravitFagotto = {
     \clef bass
     \key c \major \time 4/4 \tempoIuravit
       \set Score.currentBarNumber = #126
-  }
-}
-
-DeTorrenteFagotto = {
-  \relative c {
-    \clef bass
-    \key g \major \time 3/4 \tempoDeTorrente
-      \set Score.currentBarNumber = #177
+    r2 r4 e\fE
+    e2 dis
+    e r
+    r r4 e\fE
+    d!2 c %130
+    cis h
+    R1 \noBreak
+    R1\fermata \bar "||"
+    \tempoEtNon r2 g8\fE g h d \noBreak
+    h g e'4 d r %135
+    r2 d8 d fis a
+    fis d h h c! h a d
+    h g r4 r2
+    r8 g' g4 e2
+    r8 a a4 f!2 %140
+    r8 g4 g8 c,2
+    g4 r r8 c d e
+    f4 f, r8 d' e f
+    g4 e8 c g2
+    c4 r8 g' c,4 r %145
+    \tempoDominus R1*14 \noBreak %159
+    R1\fermata \bar "||" %160
+    \tempoIudicabit R1 \noBreak
+    a2\fE a
+    a r
+    r gis\fE
+    a e'4 c %165
+    g'2 r
+    r r4 r8 \tempoImplebit g\fE
+    c h16 a g8 f e c r e
+    a g!16 f e8 d c a r4
+    f'4. d8 g e r a~ %170
+    a f b g r c4 a8
+    a f f d h!2
+    c g
+    c4 r r8 f f4
+    fis2 g %175
+    g, c\fermata \bar "||" %176 finis
   }
 }
 

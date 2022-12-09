@@ -88,17 +88,47 @@ TecumTromboneI = {
 
 IuravitTromboneI = {
   \relative c' {
-    \clef treble
+    \clef alto
     \key c \major \time 4/4 \tempoIuravit
       \set Score.currentBarNumber = #126
-  }
-}
-
-DeTorrenteTromboneI = {
-  \relative c' {
-    \clef treble
-    \key g \major \time 3/4 \tempoDeTorrente
-      \set Score.currentBarNumber = #177
+    r2 r4 g'\fE
+    fis fis fis4. fis8
+    e2 r
+    r r4 e\fE
+    f!2 e %130
+    e4. e8 fis2
+    R1 \noBreak
+    R1\fermata \bar "||"
+    \tempoEtNon g8\fE g g fis g g16 g g8 fis \noBreak
+    g g g4 fis r %135
+    d8 d fis a fis d16 fis fis8 e
+    fis fis g g g g g fis
+    g g r4 r2
+    r r8 g g g
+    e4 e r8 f! f f %140
+    d d g g g2
+    g8 d e f g8. g16 g4
+    r8 c, d e f8. f16 f4
+    d8. d16 g8 g g4. g8
+    g4 r r2 %145
+    \tempoDominus R1*14 \noBreak %159
+    R1\fermata \bar "||" %160
+    \tempoIudicabit R1 \noBreak
+    e4\fE e f2
+    e r
+    r e4\fE e
+    e e8 e g!4 g %165
+    g8. g16 g4 r2
+    r r4 r8 \tempoImplebit g\fE
+    g4 g8 g g g r e
+    e4 e8 e e e r4
+    f4. f8 d g r e~ %170
+    e f f g r g4 a8
+    a a a f f4 f
+    e e8 e d2
+    e4 r r8 a a4
+    a a g2~ \noBreak %175
+    g g\fermata \bar "||" %176 finis
   }
 }
 

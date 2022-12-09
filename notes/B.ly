@@ -174,23 +174,83 @@ IuravitBasso = {
     \clef bass
     \key c \major \time 4/4 \autoBeamOff \tempoIuravit
       \set Score.currentBarNumber = #126
+    r2 r4 \mvTr e\fE^\tutti
+    e e dis4. dis8
+    e2 r
+    r r4 e\fE
+    d!2 c %130
+    cis4. cis8 h2
+    R1 \noBreak
+    R1\fermata \bar "||"
+    \tempoEtNon r2 g8\fE g h d \noBreak
+    h g e'4 d r %135
+    r2 d8 d fis a
+    fis d h h c! h a d
+    h g r4 r2
+    r8 g' g g e4 e
+    r8 a a a f!4 f %140
+    r8 g4 g8 c,2
+    g4 r r8 c d e
+    f8. f16 f4 r8 d e f
+    g8. g16 e8 c g4. g8
+    c4 r r2 %145
+    \tempoDominus R1*14 \noBreak %159
+    R1\fermata \bar "||" %160
+    \tempoIudicabit R1 \noBreak
+    \mvTr a4\fE^\tuttiE a a2
+    a r
+    r gis4\fE gis
+    a a8 a e'4 c %165
+    g'8. g16 g4 r2
+    r r4 r8 \tempoImplebit g\fE
+    c([ h16 a)] g8 f e c r e
+    a([ g!16 f)] e8 d c a r4
+    f'4. d8 g e r a~ %170
+    a f b? g r c4 a8
+    a f f d h!4 h
+    c c8 c g2
+    c4 r r8 f f4
+    fis fis g2( %175
+    g,) c\fermata \bar "||" %176 finis
   }
 }
 
 IuravitBassoLyrics = \lyricmode {
+  Iu -- %126
+  ra -- vit Do -- mi --
+  nus,
+  iu --
+  ra -- vit %130
+  Do -- mi -- nus
 
-}
+  et non poe -- ni -- %134
+  te -- bit e -- um, %135
+  et non poe -- ni --
+  te -- bit, et non poe -- ni -- te -- bit
+  e -- um:
+  Tu es sa --
+  er -- dos, tu es sa -- %140
+  cer -- dos in ae -- ter --
+  num se -- cun -- dum
+  or -- di -- nem, se -- cun -- dum
+  or -- di -- nem Mel -- chi -- se --
+  dech. %145
 
-DeTorrenteBasso = {
-  \relative c {
-    \clef bass
-    \key g \major \time 3/4 \autoBeamOff \tempoDeTorrente
-      \set Score.currentBarNumber = #177
-  }
-}
-
-DeTorrenteBassoLyrics = \lyricmode {
-
+  Iu -- di -- ca -- %162
+  bit,
+  iu -- di --
+  ca -- bit in na -- ti -- %165
+  o -- ni -- bus,
+  im --
+  ple -- bit ru -- i -- nas, im --
+  ple -- bit ru -- i -- nas,
+  con -- quas -- sa -- bit, con -- %170
+  quas -- sa -- bit, con -- quas --
+  sa -- bit ca -- pi -- ta in
+  ter -- ra mul -- to --
+  rum, in ter --
+  ra mul -- to -- %175
+  rum. %176 finis
 }
 
 GloriaBasso = {

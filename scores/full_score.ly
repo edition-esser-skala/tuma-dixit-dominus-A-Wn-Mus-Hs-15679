@@ -88,53 +88,136 @@
   %     \midi { \tempo 4 = 80 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Tecum principium"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #30
+  %     system-system-spacing.minimum-distance = #30
+  %     systems-per-page = #2
+  %   }
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \TecumTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \TecumTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \TecumTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \TecumTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \TecumBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \TecumBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \TecumOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \TecumBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 100 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Tecum principium"
+    \subsection "Iuravit Dominus"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #30
-      system-system-spacing.minimum-distance = #30
-      systems-per-page = #2
-    }
     \score {
       <<
         \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "cnto"
+            \IuravitCornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "fag"
+            \IuravitFagotto
+          }
+        >>
+        \new StaffGroup <<
+          \new Staff \with { \smallStaffDistance } {
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine \IuravitClarinoI \IuravitClarinoII
+          }
           \new GrandStaff <<
             \set GrandStaff.instrumentName = "trb"
             \new Staff {
               \set Staff.instrumentName = "1"
-              \TecumTromboneI
+              \IuravitTromboneI
             }
             \new Staff {
               \set Staff.instrumentName = "2"
-              \TecumTromboneII
+              \IuravitTromboneII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \IuravitViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \IuravitViolinoII
             }
           >>
         >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \TecumTenore }
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \IuravitSoprano }
           }
-          \new Lyrics \lyricsto Tenore \TecumTenoreLyrics
+          \new Lyrics \lyricsto Soprano \IuravitSopranoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "A"
+            \new Voice = "Alto" { \dynamicUp \IuravitAlto }
+          }
+          \new Lyrics \lyricsto Alto \IuravitAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \IuravitTenore }
+          }
+          \new Lyrics \lyricsto Tenore \IuravitTenoreLyrics
 
           \new Staff {
             \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \TecumBasso }
+            \new Voice = "Basso" { \dynamicUp \IuravitBasso }
           }
-          \new Lyrics \lyricsto Basso \TecumBassoLyrics
+          \new Lyrics \lyricsto Basso \IuravitBassoLyrics
         >>
         \new StaffGroup <<
           \new Staff {
             \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \TecumOrgano
+            \IuravitOrgano
           }
         >>
-        \new FiguredBass { \TecumBassFigures }
+        \new FiguredBass { \IuravitBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 100 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

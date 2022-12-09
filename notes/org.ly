@@ -276,7 +276,7 @@ IuravitOrgano = {
     \clef bass
     \key c \major \time 4/4 \tempoIuravit
       \set Score.currentBarNumber = #126
-    r2 r4 \mvTr e'\fE-\tutti
+    r2 r4 \mvTr e\fE-\tutti
     e2 dis
     e \mvTr e,\p-\senzaOrg
     e2. \mvTr e'4\f-\colOrg
@@ -285,10 +285,10 @@ IuravitOrgano = {
     \mvTr h1\p-\senzaOrg \noBreak
     h\fermata \bar "||"
     \clef "treble_8" \tempoEtNon
-      \mvTr g'8\fE-\tutti-\colOrg g h d \clef bass g,, g h d \noBreak
-    h g e'4 d r8 \clef treble a' %135
-    d d fis a \clef bass d,, d fis a
-    fis d h h c h a d
+      \mvTr g'8\fE-\colOrg g h d \clef bass g,, g h d \noBreak
+    h g e'4 d r8 a' %135
+    d \clef treble d[ fis a] \clef bass d,, d fis a
+    fis d h h c! h a d
     h g r d'-\solo g,4 r8 d'
     g, g'-\tutti g4 e2
     r8 a a4 f!2 %140
@@ -296,20 +296,20 @@ IuravitOrgano = {
     g8 \clef "treble_8" h'[ c d] e \clef bass c,[ d e]
     f4 f, r8 d' e f
     g4 e8 c g2 \noBreak
-    c4 r8 g' c,4 r8 g' %145
-    \tempoX c, h c a h a gis e \noBreak
-    a4 d16 f g8 c,16 e f8 h,16 d e8
-    a, c d e a, h c a
+    c4 r8 g'-\soloE c,4 r8 g' %145
+    \tempoDominus c, h\pE c a h a gis e \noBreak
+    a4 d16\fE f g8 c,16 e f8 h,16 d e8
+    a, c d e a, h\pE c a
     h a gis e a4 r
     a8 c d16 f g8 c,16 e f8 h,16 d e8 %150
     a,16 c d8 g,4 c8 h r h
     a g r g' a a g g
     fis fis h a^\critnote g a h h,
-    e e'16-! e,-! c'8 d16-! d,-! h'8 c16-! c,-! a'8 h16-! h,-!
-    g'8. a16 h8 h, e4 gis, %155
+    e\fE e'16-! e,-! c'8 d16-! d,-! h'8 c16-! c,-! a'8 h16-! h,-!
+    g'8. a16 h8 h, e4 gis,\pE %155
     a d16 f g!8 c,4 e
     f fis g gis
-    a8 f d e a,4 d16 f g8
+    a8 f d e a,4\fE d16 f g8
     c,16 e f8 h,16 d e8 a, c d e \noBreak
     a,2 r\fermata \bar "||" %160
     \tempoIudicabit R1 \noBreak
@@ -318,9 +318,9 @@ IuravitOrgano = {
     a r \mvTr gis2\f-\colOrg
     a e'4 c %165
     g'2 \mvTr g4\p-\senzaOrg r
-    g, r g r8 \tempoIudicabitB \mvTr g'\f-\colOrg \noBreak
+    g, r g r8 \tempoImplebit \mvTr g'\f-\colOrg \noBreak
     c h16 a g8 f e c r e
-    a g16 f e8 d c a r4
+    a g!16 f e8 d c a r4
     f'4. d8 g e r a~ %170
     a f b g r c4 a8
     a-! f-! f-! d-! h!2
@@ -333,17 +333,17 @@ IuravitOrgano = {
 
 IuravitBassFigures = \figuremode {
   r1 %126
-  <4 2+>2 <6 5! [_+]>
+  <4 2+>2 <6 5 [_+]>
   r1
   r
   <4+ _!>2 <6> %130
-  <6\\> <[5+ _+]>
+  <6\\> <[5+]>
   r1
   r
   r4. <_+>2 q8
   <[6]>4 <7>8 <6\\> <[_+]>4. <_+>8 %135
   <_+>4 <6>8 <_+> q4. q8
-  <6>4 q2 <7>8 <7 _+>
+  <6>4 q4. <[6]>8 <7> <7 _+>
   <[6]>4. <_+>2 q8
   r2 <6>
   r <6> %140
@@ -352,36 +352,36 @@ IuravitBassFigures = \figuremode {
   r1
   r4 <[6]> <4> <3>
   r1 %145
-  r4. <6\\>8 <6\\ 5!>2
+  r4. <6>8 <6\\ 5> \bo <[6 \l]> <6> \bc <[7 _+]>
   r2.. <_+>8
-  r4 <6 5>8 <_+> r2
-  r1
-  r2.. <_+>8 %150
-  r <_+>2..
+  r4 <6 5>8 <_+>2 \bo <[6 \l]>8
+  r <6> <6> \bc <[7 _+]> r2
+  r8 \bo <[6]>4 <7> q \bc <[7] _+>8 %150
+  r <_+>2 \bo <[6]>4 \bc q8
   <6\\>4. <6>8 r4 <4+>
-  <6> <_+> <6> <6 4>8 <5+ _+>
-  r4 <6 5>8 <_+> <6 5+>4 <6\\ 5>8 <[5+] _+>
+  <6> <[5+] _+> <6> <6 4>8 <5+ _+>
+  r4 <6 5>8 <_+> <6 5+>4 <6\\ 5 [_+]>8 <[5+] _+>
   <7+> <6> \bo <[5+] 4> <\t _+> r4 \bc <[6]> %155
   r2. <6>8 <5->
-  r4 <6>8 <5> <[_!]>2
+  r4 <6>8 <5> \bo <[4]> <_!> <6> \bc <[5]>
   r4 <6 5>8 <_+> r2
-  r1
-  r %160
+  r4. \bo <[_+ \l]> <6 5>8 \bc <[_+ \l]>
+  r1 %160
   r
   <[5 3]>2 <6 4>
   <5 3>1
   r2 <6 5>
-  <9>4 <8> <6>2 %165
+  <9>4 <8> <6 [_!]>2 %165
   <4>4 <3>2.
   r1
-  r2.. <_+>8
+  r2 <[6]>4. <_+>8
   r4 <_+> <6>2
   <5>4 <6>8 q4 q4. %170
   q8 q <5> <_!> r2
   r4 <6> <6 5>2
   <9>4 <8> <4> <3>
   r1
-  <6 5>2 <4> %175
+  <6 5>2 <4>4 \bo <[3]>8 \bc <[2]> %175
   <3>1 %176 finis
 }
 
