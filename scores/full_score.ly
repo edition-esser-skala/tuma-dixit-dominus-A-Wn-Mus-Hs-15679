@@ -85,7 +85,21 @@
         \new FiguredBass { \DixitBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 120 }
+      \midi { \tempo 4 = 80 }
     }
   }
 }
+
+
+% \new PianoStaff <<
+%   \set PianoStaff.instrumentName = \markup \center-column { "Organo" "solo" }
+%   \new Staff {
+%     \incipit " " "alto" #0 #-1.8
+%     \DixitChords
+%     }
+%   \new Staff {
+%     \set Staff.instrumentName = "Bassi"
+%     % \transpose c c,
+%     \DixitOrgano
+%   }
+% >>

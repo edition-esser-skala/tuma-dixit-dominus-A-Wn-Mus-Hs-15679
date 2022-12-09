@@ -4,9 +4,19 @@
 #(define option-init-toc #t)
 #(define option-print-all-bar-numbers #t)
 \include "ees.ly"
+% \include "articulate_ees.ly"
 
 
 tempoDixit = \tempoMarkup "Allegro"
+tempoTecum = \tempoMarkup "Andante"
+tempoIuravit = \tempoMarkup "Adagio"
+tempoEtNon = \tempoMarkup "Allegro"
+tempoX = \tempoMarkup "Andante"
+tempoIudicabit = \tempoMarkup "Adagio"
+tempoIudicabitB = \tempoMarkup "Allegro"
+tempoDeTorrente = \tempoMarkup "Allegretto"
+tempoGloria = \tempoMarkup "Andante"
+tempoGloriaB = \tempoMarkup "Allegro"
 
 
 \include "notes/cnto.ly"

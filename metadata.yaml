@@ -18,3 +18,5 @@ sources:
 imslp:
 parts:
   clno12: Clarino I, II in C
+extra_abbreviations:
+  vlne:
