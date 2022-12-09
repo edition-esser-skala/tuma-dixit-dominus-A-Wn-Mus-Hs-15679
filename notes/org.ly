@@ -649,16 +649,16 @@ GloriaOrgano = {
     \clef bass
     \key c \major \time 4/4 \tempoGloria
       \set Score.currentBarNumber = #241
-    \mvTr e'2\fE-\tutti d
+    \mvTr e2\fE-\tutti d
     c r
     r4 c h2
     c g
-    \tempoGloriaB c8 d e c f a16 h c8 c, %245
-    d e f g c,4 d8 g
-    c, e h g c4 r8 h
+    \tempoGloriaB \mvTr c8\pE-\soloE d e c f a16 h c8 c, %245
+    d e f g c,4\fE d8 g
+    c, e\pE h g c4 r8 h
     c4 r8 h c d e f
-    g4 a8 d g, g16 f! e8 d
-    c4 d8 g c,4 \clef treble c'' %250
+    g4\fE a8 d g, g16 f! e8 d
+    c4 d8 g c,4 \clef treble c''-\tutti %250
     c h8 d e4. d16 c
     d4 g, << {
       r8 h c d
@@ -667,7 +667,7 @@ GloriaOrgano = {
     } \\ {
       g4 g
       g e8 g a4. g16 f
-      e4 c8 g' f2
+      g4 c,8 g' f2
     } >>
     \clef "treble_8" c4 c c h8 d %255
     e4. d16 c d4 g,
@@ -684,7 +684,7 @@ GloriaOrgano = {
       f8 e16 d e4~ e8 d16 cis d4~
       d8 c16 h c4
     } \\ {
-      r8 a %265
+      f,8_\critnote a %265
       g4. f16 e f4. e16 d
       e4 a
     } >> \clef "treble_8" e e
@@ -715,29 +715,29 @@ GloriaBassFigures = \figuremode {
   <9>4 <8>2.
   r2. <5>8 <6> %245
   r4. <7>2 q8
+  r8 \bo <[6]> <6>2 r8 q
+  r4. \bc <[6]>8 r2
+  r4 <7>8 <_+> r4 <6>8 <6 [_!]>
+  r4. <[7]>8 r2 %250
   r1
-  r
-  r4 <7>8 <_+> r4 <6>8 q
-  r1 %250
-  r
   r
   r
   r
   r2 <6 4>8 <5 3> <6>4 %255
   <7>4 <6> <7> <3>8 <4>
-  <5 3>2 <6 4>8 <5 3> <6>4
+  <5 3>4 \bo <[6 4]>8 \bc <[5 3]> <6 4> <5 3> <6>4
   <7> <6> <7> <8>8 <7->
   <7>4 <6> q2
-  r4. <6>8 r2 %260
-  <4+ 2>4 <6> <4 2>2
+  r4. <6> <[6]>4 %260
+  <4+ 2> <6> <4 2>2
   <7 _+>4 <4>8 <_+> r2
   r1
   r
   r %265
   r
   r2 <5 _+>
-  <6 4>8 <5 _+>4. <_!>4 <_+>
-  <6 4>8 <5 _+>2..
+  <6 4>8 <5 _+>4. <_!>8 <_+>4.
+  <6 4>8 <5 _+>4. \bo <[_!]>8 \bc <[_+]>4.
   <6 4>8 <5 _+>2.. %270
   <6 4>8 <5 3>4. <9>4 <8>
   <4> <3>2.
@@ -745,12 +745,12 @@ GloriaBassFigures = \figuremode {
   r
   r %275
   r
-  <4>4 <3> <6>2
-  r <6>4 <5>8 <6>
+  <4>4 <3> <6> \bo <[\t]>8 \bc <[5]>
+  r2 <6>4 <5>8 <6>
   r4 <6>q2
   q8 q2.. %280
   r1
-  r
-  r
+  \bo <[5 4]>4 <\t 3>2.
+  <8>4 <7-> \bc <[6 4]>2
   <5 4>4 \bassFigureExtendersOn <5 3>8 <5 2> <5 3>2 \bassFigureExtendersOff %284 finis
 }

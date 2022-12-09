@@ -58,5 +58,23 @@ GloriaClarinoII = {
     \clef treble
     \key c \major \time 4/4 \tempoGloria
       \set Score.currentBarNumber = #241
+    R1
+    r2 e'8\fE c16 d e d e d
+    c4 r r d8 d
+    e4 e,8 e g2
+    \tempoGloriaB R1 %245
+    r2 e'8\fE c16 e d c d g,
+    e8 c r4 r2
+    R1*2
+    e'8\fE c16 e d c d g, e8 c r4 %250
+    R1*20 %270
+    r2 c'8 c16 d e8 d16 c
+    d8 g,16 g g4 r2
+    R1*7 %279
+    r4 c8 c16 c g4 r %280
+    R1
+    r4 g8 g e4 r
+    R1
+    c'4 c8 c c2\fermata \bar "|." %284 finis
   }
 }

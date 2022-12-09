@@ -220,39 +220,122 @@
   %     \midi { \tempo 4 = 60 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "De torrente"
+  %   \addTocEntry
+  %   \paper {
+  %     system-system-spacing.basic-distance = #20
+  %     system-system-spacing.minimum-distance = #20
+  %     systems-per-page = #4
+  %   }
+  %   \score {
+  %     <<
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \DeTorrenteAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \DeTorrenteAltoLyrics
+  %       >>
+  %       \new PianoStaff <<
+  %         \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
+  %         \new Staff {
+  %           \incipit " " "alto" #0 #-0.8
+  %           \DeTorrenteChords
+  %           }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "b"
+  %           % \transpose c c,
+  %           \DeTorrenteOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \DeTorrenteBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 90 }
+  %   }
+  % }
   \bookpart {
-    \subsection "De torrente"
+    \subsection "Gloria Patri"
     \addTocEntry
-    \paper {
-      system-system-spacing.basic-distance = #20
-      system-system-spacing.minimum-distance = #20
-      systems-per-page = #4
-    }
     \score {
       <<
+        \new StaffGroup <<
+          \new Staff {
+            \set Staff.instrumentName = "cnto"
+            \GloriaCornetto
+          }
+          \new Staff {
+            \set Staff.instrumentName = "fag"
+            \GloriaFagotto
+          }
+        >>
+        \new StaffGroup <<
+          \new Staff \with { \smallStaffDistance } {
+            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+            \partCombine \GloriaClarinoI \GloriaClarinoII
+          }
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "trb"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \GloriaTromboneI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \GloriaTromboneII
+            }
+          >>
+        >>
+        \new StaffGroup <<
+          \new GrandStaff <<
+            \set GrandStaff.instrumentName = "vl"
+            \new Staff {
+              \set Staff.instrumentName = "1"
+              \GloriaViolinoI
+            }
+            \new Staff {
+              \set Staff.instrumentName = "2"
+              \GloriaViolinoII
+            }
+          >>
+        >>
         \new ChoirStaff <<
           \new Staff {
+            \set Staff.instrumentName = "S"
+            \new Voice = "Soprano" { \dynamicUp \GloriaSoprano }
+          }
+          \new Lyrics \lyricsto Soprano \GloriaSopranoLyrics
+
+          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \DeTorrenteAlto }
+            \new Voice = "Alto" { \dynamicUp \GloriaAlto }
           }
-          \new Lyrics \lyricsto Alto \DeTorrenteAltoLyrics
+          \new Lyrics \lyricsto Alto \GloriaAltoLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "T"
+            \new Voice = "Tenore" { \dynamicUp \GloriaTenore }
+          }
+          \new Lyrics \lyricsto Tenore \GloriaTenoreLyrics
+
+          \new Staff {
+            \set Staff.instrumentName = "B"
+            \new Voice = "Basso" { \dynamicUp \GloriaBasso }
+          }
+          \new Lyrics \lyricsto Basso \GloriaBassoLyrics
         >>
-        \new PianoStaff <<
-          \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
+        \new StaffGroup <<
           \new Staff {
-            \incipit " " "alto" #0 #-0.8
-            \DeTorrenteChords
-            }
-          \new Staff {
-            \set Staff.instrumentName = "b"
+            \set Staff.instrumentName = \markup \center-column { "org" "b" }
             % \transpose c c,
-            \DeTorrenteOrgano
+            \GloriaOrgano
           }
         >>
-        \new FiguredBass { \DeTorrenteBassFigures }
+        \new FiguredBass { \GloriaBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 90 }
+      \midi { \tempo 4 = 60 }
     }
   }
 }

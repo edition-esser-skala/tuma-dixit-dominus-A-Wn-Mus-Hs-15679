@@ -106,5 +106,46 @@ GloriaViolinoII = {
     \clef treble
     \key c \major \time 4/4 \tempoGloria
       \set Score.currentBarNumber = #241
+    g'4\fE g8 g f4 f8 f
+    g8. g16 g4 r2
+    r4 g8 g g4 g8 g
+    g2 h
+    \tempoGloriaB R1*4 %248
+    h8\fE g16 h a g a fis g8 g a h
+    c4 r r2 %250
+    R1
+    r2 g4 g
+    g e8 g a4. g16 f
+    g4 c,8 g' f2
+    e8 e f g a e r f %255
+    g4. f16 e f4 g
+    g8 d e f g d g4~
+    g8 f16 e f4~ f8 e16 d e4~
+    e8 d16 c d4 e2~
+    e4 g8 f e g a4 %260
+    fis d8 g e4. e8
+    fis g4 fis8 g4 r
+    g g g e8 g
+    a e f g a e r4
+    f f f f8 a %265
+    g4. f16 e f4. e16 d
+    e4 a gis8 gis a h
+    c gis r4 r8 cis, d e
+    f cis r4 r8 d e fis
+    g d r4 r8 g a h %270
+    c g r4 g2~
+    g r
+    r8 e' f g a f r4
+    r8 fis g a h h, r4
+    r8 h c d e e, c' h %275
+    a4. d8 g,2~
+    g4 r r2
+    r g4 g
+    g e8 g a4. g16 f
+    g8 g g4 g r %280
+    r8 g, a h c g c4~
+    c8 h16 a h4 c r
+    r8 c d e f c f4~
+    f e8 d e2\fermata \bar "|." %284 finis
   }
 }

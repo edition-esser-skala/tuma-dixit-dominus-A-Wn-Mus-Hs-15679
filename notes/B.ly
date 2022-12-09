@@ -258,9 +258,66 @@ GloriaBasso = {
     \clef bass
     \key c \major \time 4/4 \autoBeamOff \tempoGloria
       \set Score.currentBarNumber = #241
+    \mvTr e4\fE^\tutti e8 e d4 d8 d
+    c8. c16 c4 r2
+    r4 c8 c h4 h8 h
+    c2 g
+    \tempoGloriaB R1*12 %256
+    \mvTr g'4\fE^\tuttiE g g e8 g
+    a4. g16([ f)] g4 c,
+    f2 e8 e([ f g]
+    a) e r d c4 c'~ %260
+    c8[ h16 a] h4~ h8[ a16 g] a[ g fis e]
+    d8 g d4 g, r
+    r8 g([ a h] c) g r4
+    r8 c([ d e] f) c r4
+    r8 f([ g a] b) f r4 %265
+    R1*2
+    r8 e([ fis gis] a2)
+    a8 a,([ h cis] d2)
+    d8 d([ e fis] g2) %270
+    g8 g,([ a h] c2)
+    g r
+    R1*4 %276
+    g'4 g g e8 g
+    a4 g8([ f)] e4. d8
+    c4 e f2
+    e8 d( c16[ d e f] g4) g, %280
+    g1~
+    g2 c
+    c1
+    c\fermata \bar "|." %284 finis
   }
 }
 
 GloriaBassoLyrics = \lyricmode {
+  Glo -- ri -- a Pa -- tri et %241
+  Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto,
 
+  et in sae -- cu -- la %257
+  sae -- cu -- lo -- rum,
+  a -- men, a --
+  men, a -- men, a -- %260
+  _ _
+  _ men, a -- men,
+  a -- men,
+  a -- men,
+  a -- men, %265
+
+  a -- %268
+  men, a --
+  men, a -- %270
+  men, a --
+  men,
+
+  et in sae -- cu -- la %277
+  sae -- cu -- lo -- rum,
+  a -- men, a --
+  men, a -- men, %280
+  a --
+  men,
+  a --
+  men. %284 finis
 }

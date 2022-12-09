@@ -171,12 +171,80 @@ GloriaSoprano = {
     \clef treble
     \key c \major \time 4/4 \autoBeamOff \tempoGloria
       \set Score.currentBarNumber = #241
-    % \tempoGloriaB
+    \mvTr h'4\fE^\tutti h8 h h4 h8 h
+    c8. c16 c4 r2
+    r4 e8 e d4 d8 d
+    e2 d
+    \tempoGloriaB R1*5 %249
+    r2 \mvTr c4\fE^\tuttiE c %250
+    c h8 d e4. d16([ c])
+    d4 g, r8 h([ c d]
+    e) h r h c[ d16 e] f4~
+    f8[ e16 d] e4~ e8[ d16 c] d[ c h a]
+    g8 c([ d e] f) c d4~ %255
+    d8[ c16 h] c4~ c8[ h16 a] h8[ c]
+    d d([ c h] c) d c h
+    a2 g
+    r c4 c
+    c h8 d e4. d16([ c)] %260
+    d4 g, c2~
+    c8 h a4 g r
+    R1
+    c4 c c a8 b
+    c a b c d a f'4~ %265
+    f8[ e16 d] e4~ e8[ d16 cis] d4~
+    d8[ c16 h] c4 h8 h([ c d]
+    e) h r4 r8 a([ h cis]
+    d) a r4 r8 fis([ g a]
+    h) fis r4 r8 h([ c d] %270
+    e) h r d~ d[ c16 h] c4~
+    c8[ h16 a] h4 r2
+    R1*5 %277
+    c4 c c h8 d
+    e4. d16([ c)] d4. d8
+    c d e4 d2~ %280
+    d g,
+    g r8 g([ a h]
+    c4) b a2
+    g1\fermata \bar "|." %284 finis
   }
 }
 
 GloriaSopranoLyrics = \lyricmode {
-  % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-  % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-  % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
+  Glo -- ri -- a Pa -- tri et %241
+  Fi -- li -- o
+  et Spi -- ri -- tu -- i
+  San -- cto,
+
+  et in %250
+  sae -- cu -- la sae -- cu --
+  lo -- rum, a --
+  men, a -- _ _
+  _ _
+  men, a -- men, a -- %255
+  _ _
+  men, a -- men, a -- men,
+  a -- men,
+  et in
+  sae -- cu -- la sae -- cu -- %260
+  lo -- rum, a --
+  men, a -- men,
+
+  et in sae -- cu -- la
+  sae -- cu -- lo -- rum, a -- men, a -- %265
+  _ _
+  _ men, a --
+  men, a --
+  men, a --
+  men, a -- %270
+  men, a -- _
+  men,
+
+  et in sae -- cu -- la %278
+  sae -- cu -- lo -- rum,
+  a -- men, a -- men, __ %280
+  a --
+  men, a --
+  men, a --
+  men. %284 finis
 }

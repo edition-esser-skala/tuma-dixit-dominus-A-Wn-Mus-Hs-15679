@@ -135,8 +135,41 @@ IuravitTromboneII = {
 
 GloriaTromboneII = {
   \relative c' {
-    \clef treble
+    \clef tenor
     \key c \major \time 4/4 \tempoGloria
       \set Score.currentBarNumber = #241
+    \mvTr e4\fE-\tutti e8 e f4 d8 d
+    e8. e16 e4 r2
+    r4 c8 c d4 d8 d
+    d4 c h2
+    \tempoGloriaB R1*10 %254
+    c4\fE c c h8 d %255
+    e4. d16 c d4 g,
+    r8 h c d e h r h
+    c4. h16 a h4 c8 b
+    a2 g8 g a h
+    c g r h c4 e %260
+    d2 c4 r
+    d d d h8 d
+    e h c d e h c h
+    a g r4 r8 e f g
+    a c b a d c r4 %265
+    R1
+    r2 e4 e
+    e8 e, a h c e d cis
+    a e' d e f d4 d8
+    d a g a h d c h %270
+    e d c d e2
+    d r
+    R1*3 %275
+    r2 c4 c
+    c h8 d e4. d8
+    c4 h8 a g4. h8
+    c2 a
+    c8 h c4 h2 %280
+    r8 g a h c g c4~
+    c8 h16 a h4 c2
+    c1
+    c\fermata \bar "|." %284 finis
   }
 }
