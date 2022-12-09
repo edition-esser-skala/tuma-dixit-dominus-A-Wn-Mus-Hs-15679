@@ -137,101 +137,122 @@
   %     \midi { \tempo 4 = 100 }
   %   }
   % }
+  % \bookpart {
+  %   \subsection "Iuravit Dominus"
+  %   \addTocEntry
+  %   \score {
+  %     <<
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "cnto"
+  %           \IuravitCornetto
+  %         }
+  %         \new Staff {
+  %           \set Staff.instrumentName = "fag"
+  %           \IuravitFagotto
+  %         }
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff \with { \smallStaffDistance } {
+  %           \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
+  %           \partCombine \IuravitClarinoI \IuravitClarinoII
+  %         }
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "trb"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IuravitTromboneI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IuravitTromboneII
+  %           }
+  %         >>
+  %       >>
+  %       \new StaffGroup <<
+  %         \new GrandStaff <<
+  %           \set GrandStaff.instrumentName = "vl"
+  %           \new Staff {
+  %             \set Staff.instrumentName = "1"
+  %             \IuravitViolinoI
+  %           }
+  %           \new Staff {
+  %             \set Staff.instrumentName = "2"
+  %             \IuravitViolinoII
+  %           }
+  %         >>
+  %       >>
+  %       \new ChoirStaff <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = "S"
+  %           \new Voice = "Soprano" { \dynamicUp \IuravitSoprano }
+  %         }
+  %         \new Lyrics \lyricsto Soprano \IuravitSopranoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "A"
+  %           \new Voice = "Alto" { \dynamicUp \IuravitAlto }
+  %         }
+  %         \new Lyrics \lyricsto Alto \IuravitAltoLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "T"
+  %           \new Voice = "Tenore" { \dynamicUp \IuravitTenore }
+  %         }
+  %         \new Lyrics \lyricsto Tenore \IuravitTenoreLyrics
+
+  %         \new Staff {
+  %           \set Staff.instrumentName = "B"
+  %           \new Voice = "Basso" { \dynamicUp \IuravitBasso }
+  %         }
+  %         \new Lyrics \lyricsto Basso \IuravitBassoLyrics
+  %       >>
+  %       \new StaffGroup <<
+  %         \new Staff {
+  %           \set Staff.instrumentName = \markup \center-column { "org" "b" }
+  %           % \transpose c c,
+  %           \IuravitOrgano
+  %         }
+  %       >>
+  %       \new FiguredBass { \IuravitBassFigures }
+  %     >>
+  %     \layout { }
+  %     \midi { \tempo 4 = 60 }
+  %   }
+  % }
   \bookpart {
-    \subsection "Iuravit Dominus"
+    \subsection "De torrente"
     \addTocEntry
+    \paper {
+      system-system-spacing.basic-distance = #20
+      system-system-spacing.minimum-distance = #20
+      systems-per-page = #4
+    }
     \score {
       <<
-        \new StaffGroup <<
-          \new Staff {
-            \set Staff.instrumentName = "cnto"
-            \IuravitCornetto
-          }
-          \new Staff {
-            \set Staff.instrumentName = "fag"
-            \IuravitFagotto
-          }
-        >>
-        \new StaffGroup <<
-          \new Staff \with { \smallStaffDistance } {
-            \set Staff.instrumentName = \markup \center-column { "clno" "1, 2" }
-            \partCombine \IuravitClarinoI \IuravitClarinoII
-          }
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "trb"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \IuravitTromboneI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \IuravitTromboneII
-            }
-          >>
-        >>
-        \new StaffGroup <<
-          \new GrandStaff <<
-            \set GrandStaff.instrumentName = "vl"
-            \new Staff {
-              \set Staff.instrumentName = "1"
-              \IuravitViolinoI
-            }
-            \new Staff {
-              \set Staff.instrumentName = "2"
-              \IuravitViolinoII
-            }
-          >>
-        >>
         \new ChoirStaff <<
           \new Staff {
-            \set Staff.instrumentName = "S"
-            \new Voice = "Soprano" { \dynamicUp \IuravitSoprano }
-          }
-          \new Lyrics \lyricsto Soprano \IuravitSopranoLyrics
-
-          \new Staff {
             \set Staff.instrumentName = "A"
-            \new Voice = "Alto" { \dynamicUp \IuravitAlto }
+            \new Voice = "Alto" { \dynamicUp \DeTorrenteAlto }
           }
-          \new Lyrics \lyricsto Alto \IuravitAltoLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "T"
-            \new Voice = "Tenore" { \dynamicUp \IuravitTenore }
-          }
-          \new Lyrics \lyricsto Tenore \IuravitTenoreLyrics
-
-          \new Staff {
-            \set Staff.instrumentName = "B"
-            \new Voice = "Basso" { \dynamicUp \IuravitBasso }
-          }
-          \new Lyrics \lyricsto Basso \IuravitBassoLyrics
+          \new Lyrics \lyricsto Alto \DeTorrenteAltoLyrics
         >>
-        \new StaffGroup <<
+        \new PianoStaff <<
+          \set PianoStaff.instrumentName = \markup \center-column { "org" "solo" }
           \new Staff {
-            \set Staff.instrumentName = \markup \center-column { "org" "b" }
+            \incipit " " "alto" #0 #-0.8
+            \DeTorrenteChords
+            }
+          \new Staff {
+            \set Staff.instrumentName = "b"
             % \transpose c c,
-            \IuravitOrgano
+            \DeTorrenteOrgano
           }
         >>
-        \new FiguredBass { \IuravitBassFigures }
+        \new FiguredBass { \DeTorrenteBassFigures }
       >>
       \layout { }
-      \midi { \tempo 4 = 60 }
+      \midi { \tempo 4 = 90 }
     }
   }
 }
-
-
-% \new PianoStaff <<
-%   \set PianoStaff.instrumentName = \markup \center-column { "Organo" "solo" }
-%   \new Staff {
-%     \incipit " " "alto" #0 #-1.8
-%     \DixitChords
-%     }
-%   \new Staff {
-%     \set Staff.instrumentName = "Bassi"
-%     % \transpose c c,
-%     \DixitOrgano
-%   }
-% >>

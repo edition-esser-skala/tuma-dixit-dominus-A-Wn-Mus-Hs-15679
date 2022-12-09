@@ -169,11 +169,110 @@ DeTorrenteAlto = {
     \clef treble
     \key g \major \time 3/4 \autoBeamOff \tempoDeTorrente
       \set Score.currentBarNumber = #177
+    r4 \mvTr d\pE^\solo g
+    fis8([ e) d( c) h( a)]
+    h[ h' a g fis e]
+    fis[ e] d4 g %180
+    e8 d \appoggiatura d4 c2\trill
+    h4 r r
+    R2.*5 %187
+    r4 d g
+    fis8([ e) d( c) h( a)]
+    h[ h' a g fis e] %190
+    fis[ e] d4 g
+    e8 d c2\trill
+    h4 r d
+    d h8 a g g'
+    g4 fis a %195
+    a fis8 e fis d
+    e4 a, a'8 fis
+    d16[ h' a h] g[ a fis g] e[ fis d e]
+    cis[ a' g a] fis[ g e fis] d[ e cis d]
+    h[ g' fis g] e[ fis d e] cis[ d h cis] %200
+    a[ a h cis] d[ cis d e] fis[ e fis g]
+    a[ fis] e([ d)] e2\trill
+    d4 r r
+    R2.*4 %207
+    r4 a' a
+    a8[ g fis e d a']
+    h[ a g fis e a] %210
+    fis[ e] d4 g
+    a g g
+    fis8 e dis2
+    e4 r h'
+    h a8 gis a e %215
+    fis([ e)] d4 a'
+    a g8 fis g d
+    e2.~
+    e16[ e-! d e] cis[ d h cis] a[ cis d e]
+    fis2.~ %220
+    fis16[ fis-! e fis] dis[ e cis dis] h[ dis e fis]
+    g2.~
+    g16[ g-! fis g] e[ f d e] c[ e fis g]
+    fis8 fis g2
+    fis4 r g8 g %225
+    g16[ a f g] e[ f d e] c[ e fis g]
+    fis[ fis-! e fis] d[ e c d] h[ fis' g a]
+    g[ g-! fis g] e[ f d e] c[ g' a h]
+    a[ a-! g a] fis[ g e fis] d[ a' h c]
+    h8[ a g fis] g4 %230
+    a8[( e]) fis2\trill
+    g4 r r
+    R2.*7 %239
+    R2.\fermata \bar "||" %240
   }
 }
 
 DeTorrenteAltoLyrics = \lyricmode {
+  De tor -- %177
+  ren --
+  _
+  _ te in %180
+  vi -- a bi --
+  bet,
 
+  de tor -- %188
+  ren --
+  _ %190
+  _ te in
+  vi -- a bi --
+  bet, pro --
+  pter -- e -- a ex -- al --
+  ta -- bit, pro -- %195
+  pter -- e -- a ex -- al --
+  ta -- bit, ex -- al --
+  ta -- _ _
+  _ _ _
+  _ _ _ %200
+  _ _ _
+  _ bit ca --
+  put.
+
+  De tor -- %208
+  ren --
+  _ %210
+  _ te in
+  vi -- a, in
+  vi -- a bi --
+  bet, pro --
+  pter -- e -- a ex -- al -- %215
+  ta -- bit, pro --
+  pter -- e -- a ex -- al --
+  ta --
+  _ _
+  _ %220
+  _ _
+  _
+  _ _
+  _ bit ca --
+  put, ex -- al -- %225
+  ta -- _ _
+  _ _ _
+  _ _ _
+  _ _ _
+  _ _ %230
+  bit ca --
+  put. %232 finis
 }
 
 GloriaAlto = {

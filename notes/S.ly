@@ -56,11 +56,6 @@ DixitSopranoLyrics = \lyricmode {
   o -- rum. %37 finis
 }
 
-% De tor -- ren -- te in vi -- a bi -- bet, pro -- pter -- e -- a ex -- al -- ta -- bit ca -- put.
-% Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
-% si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
-% et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
-
 IuravitSoprano = {
   \relative c' {
     \clef treble
@@ -181,5 +176,7 @@ GloriaSoprano = {
 }
 
 GloriaSopranoLyrics = \lyricmode {
-
+  % Glo -- ri -- a Pa -- tri et Fi -- li -- o et Spi -- ri -- tu -- i San -- cto,
+  % si -- cut e -- rat in prin -- ci -- pi -- o et nunc et sem -- per
+  % et in sae -- cu -- la sae -- cu -- lo -- rum, a -- men.
 }

@@ -390,29 +390,81 @@ DeTorrenteChords = {
     \clef treble
     \key g \major \time 3/4 \tempoDeTorrente
       \set Score.currentBarNumber = #177
-      R2.*5 %181
-    r16 d c d h c a h g d'\trill c d
+    << {
+      \tiny \mvTr <h d>2._\critnote
+      <a d>2 d4
+      d e2
+      <a, d> d4 %180
+      <c e>8 <d> c2
+      h16
+    } \\ {
+      \tiny g2.\pE
+      fis2 a4
+      h a g
+      fis2 g4
+      g <e g> fis %180
+      <d g>16
+    } >> d'\fE c d h c a h g d'\trill c d
     e e-! d e c d h c a e'\trill d e
     fis fis-! e fis d e c d h fis'\trill e fis
     g h-! a h g a fis g e f d e %185
     c2.\trill
     h8 a16 g a2\trill
-    g4 r r
-    R2.*4 %192
-    r16 d' c d h d c d a d c d
+    g4 << {
+      \tiny <h d>2
+      <a d> d4
+      d e2
+      <a, d>2 d4 %190
+      <c e>8 <d> c2
+      h16
+    } \\ {
+      \tiny g2\pE
+      fis2 a4
+      h a g
+      fis2 g4 %190
+      g <e g> fis
+      <d g>16
+    } >> d' c d h d c d a d c d
     h4 r r
     r16 a' g a fis a g a e a g a %195
     fis4 r r
-    R2.*6 %202
-    r16 a g a fis g e fis d a'\trill g a
+    << {
+      \tiny e2 d4
+      d2 r4
+      <e a> r <d a'>
+      <d g> r <cis g'> %200
+      <d a'> r <d fis>8 <cis g'>
+      <d a'> <d fis> e2
+      d16
+    } \\ {
+      \tiny d4 cis a
+      h2 r4
+      cis r a
+      h r a %200
+      a r a
+      a8 h <h d>4 <a cis>
+      <fis a>16
+    } >> a'\fE g a fis g e fis d a'\trill g a
     h h-! a h g a fis g e h'\trill a h
     cis cis-! h cis a h g! a fis cis'\trill h cis %205
     d fis-! e fis d e cis d h c a h
     g2.\trill
     fis8 d' << { d4 cis\trill } \\ { e,2 } >>
-    << { d'4 } \\ { fis, } >> r r
-    R2.*4 %213
-    r16 h a h g a fis g e f d e
+    << { d'4 } \\ { fis, } >> r << {
+      \tiny a
+      <g h>2 <e a>4 %210
+      <d fis>2 g4
+      a g2
+      fis8 e dis2
+      e16
+    } \\ {
+      \tiny d4\pE
+      d2 cis4 %210
+      a2 d4
+      e d2
+      c8 h a4 h
+      g16
+    } >> h' a h g a fis g e f d e
     c2 r4 %215
     r16 a' g a fis g e fis d e c d
     h2 r4
@@ -423,9 +475,25 @@ DeTorrenteChords = {
     h16 h-! a h g a fis g e g a h
     c2.~
     c8 a h2
-    a4 r r %225
-    R2.*6 %231
-    r4 d, g
+    a4 << {
+      \tiny g g
+      g8 e r4 <a, e'>
+      <a d> r <h fis'>
+      <h e> r <c g'>
+      <c fis> r <d a'>
+      <d g> g8 fis g4 %230
+      a fis2
+      g4
+    } \\ {
+      \tiny d4 <h d>
+      <g c> r g
+      fis r a
+      g r h
+      a r c
+      h c d %230
+      e d a
+      h
+    } >> d\fE g
     fis8 e d c h a
     h16 d c d h c a h g d'\trillE c d
     e e-! d e c d h c a e'\trillE d e %235
@@ -442,18 +510,18 @@ DeTorrenteOrgano = {
     \clef bass
     \key g \major \time 3/4 \tempoDeTorrente
       \set Score.currentBarNumber = #177
-    g4 h g
+    \mvTr g4\pE-\solo h g
     d'2 fis4
     g c,2
     d4 c h %180
     c8 h a4 d
-    g,2 h4
+    g,2\fE h4
     c r cis
     d r dis
     e2 r4 %185
     r16 a g a fis g e fis d fis e fis
     g8 e c4 d
-    g, h g
+    g, h\pE g
     d'2 fis4
     g c,2 %190
     d4 c h
@@ -468,13 +536,13 @@ DeTorrenteOrgano = {
     g r e %200
     fis r d8 e
     fis h g e a a,
-    d2 fis4
+    d2\fE fis4
     g r gis
     a r ais %205
     h2 r4
     r16 e d e cis d h cis a cis h cis
     d8 h a g a a,
-    d2 fis4
+    d2 fis4\pE
     g2 a4 %210
     d,2 h'4
     c! h h
@@ -497,7 +565,7 @@ DeTorrenteOrgano = {
     fis r fis
     g a h %230
     c d d,
-    g, h g
+    g,\fE h g
     d'2 fis,4
     g r h
     c r cis %235
@@ -513,8 +581,8 @@ DeTorrenteBassFigures = \figuremode {
   r2. %177
   r
   r4 <6> <5>
-  r2. %180
-  r4 <7>2
+  r2 \bo <[6]>4 %180
+  r8 \bc q <7>4 <[7]>
   r2.
   r
   r
@@ -524,15 +592,15 @@ DeTorrenteBassFigures = \figuremode {
   r
   r
   r4 <6> <5> %190
+  r2 \bo <[6]>4
+  r8 <6> <7>4 \bc <[7]>
   r2.
-  r
-  r
   r
   r %195
   r
   <4>4 <_+> <6>
   r2.
-  <_+>
+  <_+>2 <[6]>4
   r2 <6\\>4 %200
   <6>2 r8 <6\\>
   <[6]>4 <6 5> <_+>
